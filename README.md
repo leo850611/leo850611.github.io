@@ -14,5 +14,5 @@ hugo server -D -p 8888
 
 ### Create post
 ```bash
-hugo new post/yyyy-mm-dd/article-title/index.md
+hugo new post/yyyy-mm-dd article-title/index.md
 ```
