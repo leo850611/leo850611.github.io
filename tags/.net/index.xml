@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>.NET on Leo Sheu 的日常筆記</title><link>https://sheu.pw/tags/.net/</link><description>Recent content in .NET on Leo Sheu 的日常筆記</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Fri, 22 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sheu.pw/tags/.net/index.xml" rel="self" type="application/rss+xml"/><item><title>使用 Autofac KeyFilter Attribute 在相同介面注入不同實體</title><link>https://sheu.pw/p/autofac-keyfilter-attribute/</link><pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate><guid>https://sheu.pw/p/autofac-keyfilter-attribute/</guid><description>&lt;div class="highlight">&lt;div class="chroma">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>.NET on Leo Sheu 的日常筆記</title><link>https://blog.sheu.pw/tags/.net/</link><description>Recent content in .NET on Leo Sheu 的日常筆記</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Fri, 22 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sheu.pw/tags/.net/index.xml" rel="self" type="application/rss+xml"/><item><title>使用 Autofac KeyFilter Attribute 在相同介面注入不同實體</title><link>https://blog.sheu.pw/p/autofac-keyfilter-attribute/</link><pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate><guid>https://blog.sheu.pw/p/autofac-keyfilter-attribute/</guid><description>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
 &lt;/span>&lt;span class="lnt"> 2
@@ -71,14 +71,14 @@
 &lt;/div>
 &lt;/div>&lt;hr>
 &lt;p>參考資料：&lt;a class="link" href="https://autofac.readthedocs.io/en/latest/advanced/keyed-services.html?highlight=named#resolving-with-attributes" target="_blank" rel="noopener"
->[Autofac] resolving with attributes&lt;/a>&lt;/p></description></item><item><title>如何查詢 w3wp.exe 對應的 IIS Application Pool</title><link>https://sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/</link><pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate><guid>https://sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/</guid><description>&lt;p>on Windows 2012 (IIS 8)&lt;/p>
+>[Autofac] resolving with attributes&lt;/a>&lt;/p></description></item><item><title>如何查詢 w3wp.exe 對應的 IIS Application Pool</title><link>https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/</link><pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate><guid>https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/</guid><description>&lt;p>on Windows 2012 (IIS 8)&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>選擇想要檢視的 IIS Worker Process
-&lt;img src="https://sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/w3wp-1.png"
+&lt;img src="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/w3wp-1.png"
 width="650"
 height="412"
-srcset="https://sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/w3wp-1_hub29babf6175394838e5c78e03b7ce5a7_46549_480x0_resize_box_3.png 480w, https://sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/w3wp-1_hub29babf6175394838e5c78e03b7ce5a7_46549_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/w3wp-1_hub29babf6175394838e5c78e03b7ce5a7_46549_480x0_resize_box_3.png 480w, https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/w3wp-1_hub29babf6175394838e5c78e03b7ce5a7_46549_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="157"
@@ -87,10 +87,10 @@ data-flex-basis="378px"
 &lt;/li>
 &lt;li>
 &lt;p>切到 detail 查看該 process 的 PID
-&lt;img src="https://sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/w3wp-2.png"
+&lt;img src="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/w3wp-2.png"
 width="650"
 height="357"
-srcset="https://sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/w3wp-2_huc407bfe8864868fca295eada6294ab55_51189_480x0_resize_box_3.png 480w, https://sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/w3wp-2_huc407bfe8864868fca295eada6294ab55_51189_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/w3wp-2_huc407bfe8864868fca295eada6294ab55_51189_480x0_resize_box_3.png 480w, https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/w3wp-2_huc407bfe8864868fca295eada6294ab55_51189_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="182"
@@ -99,10 +99,10 @@ data-flex-basis="436px"
 &lt;/li>
 &lt;li>
 &lt;p>切換到 C:\Windows\System32\inetsrv ，執行 &lt;code>.\appcmd.exe list wp&lt;/code> 找到對應的 PID
-&lt;img src="https://sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/w3wp-3.png"
+&lt;img src="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/w3wp-3.png"
 width="677"
 height="343"
-srcset="https://sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/w3wp-3_huf1ef8aeac24f219555e550f01d095eca_19525_480x0_resize_box_3.png 480w, https://sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/w3wp-3_huf1ef8aeac24f219555e550f01d095eca_19525_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/w3wp-3_huf1ef8aeac24f219555e550f01d095eca_19525_480x0_resize_box_3.png 480w, https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E6%9F%A5%E8%A9%A2-w3wp.exe-%E5%B0%8D%E6%87%89%E7%9A%84-iis-application-pool/w3wp-3_huf1ef8aeac24f219555e550f01d095eca_19525_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="197"
