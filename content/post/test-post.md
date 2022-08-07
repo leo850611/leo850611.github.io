@@ -1,6 +1,6 @@
 ---
 title: "Init Post"
-date: 2022-01-01
+date: 2000-01-01
 slug: test-post-url
 categories:
     - TestCategory
