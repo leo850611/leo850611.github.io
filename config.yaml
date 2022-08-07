@@ -1,4 +1,4 @@
-baseurl: https://sheu.pw
+baseurl: https://blog.sheu.pw
 languageCode: zh-tw
 theme: hugo-theme-stack
 paginate: 8
