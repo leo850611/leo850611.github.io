@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Leo Sheu 的日常筆記</title><link>https://blog.sheu.pw/post/</link><description>Recent content in Posts on Leo Sheu 的日常筆記</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Sun, 31 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sheu.pw/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo start</title><link>https://blog.sheu.pw/p/hugo-start/</link><pubDate>Sun, 31 Jul 2022 00:00:00 +0000</pubDate><guid>https://blog.sheu.pw/p/hugo-start/</guid><description>&lt;img src="https://blog.sheu.pw/p/hugo-start/hugo-logo.svg" alt="Featured image of post Hugo start" />&lt;p>&lt;img src="https://blog.sheu.pw/p/hugo-start/hugo-logo.svg"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Leo Sheu 的日常筆記</title><link>https://blog.sheu.pw/post/</link><description>Recent content in Posts on Leo Sheu 的日常筆記</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Sun, 07 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sheu.pw/post/index.xml" rel="self" type="application/rss+xml"/><item><title>所有的 Class 都要加 Interface 嗎?</title><link>https://blog.sheu.pw/p/why-add-interface/</link><pubDate>Sun, 07 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sheu.pw/p/why-add-interface/</guid><description>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-C#" data-lang="C#">&lt;span class="line">&lt;span class="cl">&lt;span class="k">interface&lt;/span> &lt;span class="nc">ITextSummarizer&lt;/span>&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">string&lt;/span> &lt;span class="n">summarizeText&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">string&lt;/span> &lt;span class="n">text&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">TextSummarizer&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">ITextSummarizer&lt;/span>&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">string&lt;/span> &lt;span class="n">summarizeText&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">string&lt;/span> &lt;span class="n">text&lt;/span>&lt;span class="p">){&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">//do something&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="s">&amp;#34;summarize text&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>雖然 TextSummarizer 只有一個實作，就算之後不會有另一個實作，加上 interface 也有其他好處。&lt;/p>
+&lt;p>定義 interface 的優點：&lt;/p>
+&lt;ul>
+&lt;li>可以使測試更容易 - 如果要在測試期間使用 mock 或 fake 假的實作，會需要定義一個介面來執行此操作。&lt;/li>
+&lt;li>讓公用 API 更清晰 - 使用端應該或不應該使用哪些功能不會產生混淆。&lt;/li>
+&lt;li>有可能猜錯只需要一個實作 - 最初寫程式時可能確定真的不需要第二個實作，但經過一兩個月後，這個假設可能被證明是錯誤的。&lt;/li>
+&lt;li>同一類別可以解決兩個子問題 - 有時某個類別可以為兩個或多個不同的抽象層提供實作。例如 LinkedList 實作類別可以實作 List 和 Queue 介面。&lt;/li>
+&lt;/ul>
+&lt;p>定義 interface 的缺點：&lt;/p>
+&lt;ul>
+&lt;li>需要付出更多努力 - 如果沒有 IDE 的幫忙，可能要手動多寫幾行程式碼。
+-&amp;gt; &lt;a class="link" href="https://www.jetbrains.com/help/rider/Refactorings__Extract_Interface.html" target="_blank" rel="noopener"
+>使用 Rider 自動產生 Interface&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>Reference&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://www.tenlong.com.tw/products/9786263242128" target="_blank" rel="noopener"
+>Good Code, Bad Code｜寫出高品質的程式碼&lt;/a> PART 1 理論篇 第2章 抽象層&lt;/p>
+&lt;/blockquote></description></item><item><title>Hugo start</title><link>https://blog.sheu.pw/p/hugo-start/</link><pubDate>Sun, 31 Jul 2022 00:00:00 +0000</pubDate><guid>https://blog.sheu.pw/p/hugo-start/</guid><description>&lt;img src="https://blog.sheu.pw/p/hugo-start/hugo-logo.svg" alt="Featured image of post Hugo start" />&lt;p>&lt;img src="https://blog.sheu.pw/p/hugo-start/hugo-logo.svg"
 loading="lazy"
 alt="hugo logo"
 >&lt;/p>
