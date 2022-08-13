@@ -39,4 +39,4 @@ class TextSummarizer : ITextSummarizer{
 ---
 
 Reference
-> [Good Code, Bad Code｜寫出高品質的程式碼](https://www.tenlong.com.tw/products/9786263242128) PART 1 理論篇 第2章 抽象層
+> [Good Code, Bad Code｜寫出高品質的程式碼](https://www.tenlong.com.tw/products/9786263242128) PART 1 理論篇 - 第2章 抽象層
