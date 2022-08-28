@@ -30,7 +30,7 @@ tags:
 相關網址
 ```
 https://medirep.mornjoy.com.tw/Login/Index
-http://medirep.mornjoy.com.tw/siteadmin/Print?bid="_{Id}_"
+http://medirep.mornjoy.com.tw/siteadmin/Print?bid=_{Id}_
 ```
 
 回報於 [HITCON ZeroDay：晨悅預防醫學機構 醫療資料存取漏洞](https://zeroday.hitcon.org/vulnerability/ZD-2022-00376)
