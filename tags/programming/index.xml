@@ -25,21 +25,21 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>雖然 TextSummarizer 只有一個實作，就算之後不會有另一個實作，加上 interface 也有其他好處。&lt;/p>
-&lt;p>定義 interface 的優點：&lt;/p>
+&lt;h3 id="定義-interface-的優點">定義 interface 的優點：&lt;/h3>
 &lt;ul>
 &lt;li>可以使測試更容易 - 如果要在測試期間使用 mock 或 fake 假的實作，會需要定義一個介面來執行此操作。&lt;/li>
 &lt;li>讓公用 API 更清晰 - 使用端應該或不應該使用哪些功能不會產生混淆。&lt;/li>
 &lt;li>有可能猜錯只需要一個實作 - 最初寫程式時可能確定真的不需要第二個實作，但經過一兩個月後，這個假設可能被證明是錯誤的。&lt;/li>
 &lt;li>同一類別可以解決兩個子問題 - 有時某個類別可以為兩個或多個不同的抽象層提供實作。例如 LinkedList 實作類別可以實作 List 和 Queue 介面。&lt;/li>
 &lt;/ul>
-&lt;p>定義 interface 的缺點：&lt;/p>
+&lt;h3 id="定義-interface-的缺點">定義 interface 的缺點：&lt;/h3>
 &lt;ul>
 &lt;li>需要付出更多努力 - 如果沒有 IDE 的幫忙，可能要手動多寫幾行程式碼。
 -&amp;gt; &lt;a class="link" href="https://www.jetbrains.com/help/rider/Refactorings__Extract_Interface.html" target="_blank" rel="noopener"
 >使用 Rider 自動產生 Interface&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;p>Reference&lt;/p>
+&lt;h3 id="reference">Reference&lt;/h3>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="https://www.tenlong.com.tw/products/9786263242128" target="_blank" rel="noopener"
 >Good Code, Bad Code｜寫出高品質的程式碼&lt;/a> PART 1 理論篇 - 第2章 抽象層&lt;/p>

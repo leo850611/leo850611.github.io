@@ -7,7 +7,8 @@ class="gallery-image"
 data-flex-grow="70"
 data-flex-basis="169px"
 >&lt;/p>
-&lt;p>做完健康檢查後，在網站上登入後查看報告時，發現有個報告書下載的功能&lt;/p>
+&lt;h3 id="敘述">敘述&lt;/h3>
+&lt;p>做完健康檢查後，在網站上登入後查看報告時，發現有個報告書下載的功能。&lt;/p>
 &lt;p>&lt;img src="https://blog.sheu.pw/p/%E6%BC%8F%E6%B4%9E%E5%9B%9E%E5%A0%B1-%E5%81%A5%E6%AA%A2%E4%B8%AD%E5%BF%83%E9%86%AB%E7%99%82%E8%B3%87%E6%96%99%E5%AD%98%E5%8F%96%E6%8E%A7%E5%88%B6%E7%BC%BA%E9%99%B7/mornjoy-2.png"
 width="939"
 height="585"
@@ -17,7 +18,7 @@ class="gallery-image"
 data-flex-grow="160"
 data-flex-basis="385px"
 >&lt;/p>
-&lt;p>下載完成後是一個PDF檔，這時發現下載網址後有個 &lt;code>bid&lt;/code> 的參數&lt;/p>
+&lt;p>下載完成後是一個PDF檔，這時發現下載網址後有個 &lt;code>bid&lt;/code> 的參數。&lt;/p>
 &lt;p>&lt;img src="https://blog.sheu.pw/p/%E6%BC%8F%E6%B4%9E%E5%9B%9E%E5%A0%B1-%E5%81%A5%E6%AA%A2%E4%B8%AD%E5%BF%83%E9%86%AB%E7%99%82%E8%B3%87%E6%96%99%E5%AD%98%E5%8F%96%E6%8E%A7%E5%88%B6%E7%BC%BA%E9%99%B7/mornjoy-3.png"
 width="769"
 height="198"
@@ -27,7 +28,7 @@ class="gallery-image"
 data-flex-grow="388"
 data-flex-basis="932px"
 >&lt;/p>
-&lt;p>看起來 &lt;code>bid&lt;/code> 的參數是有規律且有序的，此時嘗試修改不同的數值嘗試發起 request，發現可以正常取得PDF報告書&lt;/p>
+&lt;p>看起來 &lt;code>bid&lt;/code> 的參數是有規律且有序的，此時嘗試修改不同的數值嘗試發起 request，發現可以正常取得 PDF 報告書。&lt;/p>
 &lt;p>&lt;img src="https://blog.sheu.pw/p/%E6%BC%8F%E6%B4%9E%E5%9B%9E%E5%A0%B1-%E5%81%A5%E6%AA%A2%E4%B8%AD%E5%BF%83%E9%86%AB%E7%99%82%E8%B3%87%E6%96%99%E5%AD%98%E5%8F%96%E6%8E%A7%E5%88%B6%E7%BC%BA%E9%99%B7/mornjoy-4.png"
 width="1082"
 height="523"
@@ -37,7 +38,7 @@ class="gallery-image"
 data-flex-grow="206"
 data-flex-basis="496px"
 >&lt;/p>
-&lt;p>此存取控制缺陷的漏洞會造成可以取得他人的健檢報告資料&lt;/p>
+&lt;p>此存取控制缺陷的漏洞會造成可以取得他人的健檢報告資料。&lt;/p>
 &lt;p>&lt;img src="https://blog.sheu.pw/p/%E6%BC%8F%E6%B4%9E%E5%9B%9E%E5%A0%B1-%E5%81%A5%E6%AA%A2%E4%B8%AD%E5%BF%83%E9%86%AB%E7%99%82%E8%B3%87%E6%96%99%E5%AD%98%E5%8F%96%E6%8E%A7%E5%88%B6%E7%BC%BA%E9%99%B7/mornjoy-5.png"
 width="751"
 height="608"
@@ -47,7 +48,7 @@ class="gallery-image"
 data-flex-grow="123"
 data-flex-basis="296px"
 >&lt;/p>
-&lt;p>相關網址&lt;/p>
+&lt;h3 id="相關網址">相關網址&lt;/h3>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -58,17 +59,17 @@ data-flex-basis="296px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">http://medirep.mornjoy.com.tw/siteadmin/Print?bid=_{Id}_
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>回報於 &lt;a class="link" href="https://zeroday.hitcon.org/vulnerability/ZD-2022-00376" target="_blank" rel="noopener"
->HITCON ZeroDay：晨悅預防醫學機構 醫療資料存取漏洞&lt;/a>&lt;/p>
-&lt;p>時間軸&lt;/p>
+&lt;/div>&lt;h3 id="時間軸">時間軸&lt;/h3>
 &lt;blockquote>
 &lt;p>2022/05/30 - 提交漏洞&lt;br>
 2022/06/02 - 通報未回應 (由 HITCON ZeroDay 服務團隊)&lt;br>
 2022/06/07 - 複測已修復 (by Leo)&lt;br>
 2022/07/30 - 公開&lt;/p>
 &lt;/blockquote>
+&lt;p>回報於 &lt;a class="link" href="https://zeroday.hitcon.org/vulnerability/ZD-2022-00376" target="_blank" rel="noopener"
+>HITCON ZeroDay：晨悅預防醫學機構 醫療資料存取漏洞&lt;/a>&lt;/p>
 &lt;hr>
-&lt;p>Reference&lt;/p>
+&lt;h3 id="reference">Reference&lt;/h3>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="https://portswigger.net/web-security/access-control" target="_blank" rel="noopener"
 >Access control vulnerabilities and privilege escalation | Web Security Academy&lt;/a>&lt;/p>
