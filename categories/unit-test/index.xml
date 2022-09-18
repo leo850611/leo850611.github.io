@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unit Test on Leo Sheu 的日常筆記</title><link>https://blog.sheu.pw/categories/unit-test/</link><description>Recent content in Unit Test on Leo Sheu 的日常筆記</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Sun, 18 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sheu.pw/categories/unit-test/index.xml" rel="self" type="application/rss+xml"/><item><title>如何對 protected method 做 unit test</title><link>https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%B0%8D-protected-method-%E5%81%9A-unit-test/</link><pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%B0%8D-protected-method-%E5%81%9A-unit-test/</guid><description>&lt;h3 id="情境">情境&lt;/h3>
+&lt;p>在寫單元測試時，如果想要針對一個 protected method 做測試時，在測試專案想要存取 method 時會顯示 &lt;code>cannot access protected method 'XXX' here&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%B0%8D-protected-method-%E5%81%9A-unit-test/protected-1.png"
+width="493"
+height="81"
+srcset="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%B0%8D-protected-method-%E5%81%9A-unit-test/protected-1_hu2af8c1e2253013247eaf1a83c2b23754_4593_480x0_resize_box_3.png 480w, https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%B0%8D-protected-method-%E5%81%9A-unit-test/protected-1_hu2af8c1e2253013247eaf1a83c2b23754_4593_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="608"
+data-flex-basis="1460px"
+>&lt;/p>
+&lt;p>一般情況下最好是由呼叫 &lt;code>Protected&lt;/code> 的 &lt;code>Public&lt;/code> method 去做測試，但如果萬不得已，也有可以對 protected method 進行測試的方法。&lt;/p>
+&lt;h3 id="testing-protected-methods">Testing Protected Methods&lt;/h3>
+&lt;p>假設有個 protected method &lt;code>MyMethodName&lt;/code>，我們想要對這個 method 進行單元測試。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-C#" data-lang="C#">&lt;span class="line">&lt;span class="cl">&lt;span class="k">public&lt;/span> &lt;span class="k">class&lt;/span> &lt;span class="nc">OriginalClass&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">protected&lt;/span> &lt;span class="k">override&lt;/span> &lt;span class="kt">string&lt;/span> &lt;span class="n">MyMethodName&lt;/span>&lt;span class="p">(){&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="s">&amp;#34;any string&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>這時可以在測試專案新增一個 &lt;code>FakeClass&lt;/code> 去繼承 &lt;code>OriginalClass&lt;/code>，並新增一個 method，透過 new 修飾詞隱藏繼承自基底類別的方法，FakeClass 中 method 的實作使用 base 呼叫基底類別原有的方法。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-C#" data-lang="C#">&lt;span class="line">&lt;span class="cl">&lt;span class="k">public&lt;/span> &lt;span class="k">class&lt;/span> &lt;span class="nc">FakeClass&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">OriginalClass&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">public&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="kt">string&lt;/span> &lt;span class="n">MyMethodName&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="k">base&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">MyMethodName&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>最後測試時使用 &lt;code>FakeClass&lt;/code> 呼叫 &lt;code>MyMethodName&lt;/code> 進行測試即可。&lt;/p>
+&lt;hr>
+&lt;h3 id="reference">Reference&lt;/h3>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords" target="_blank" rel="noopener"
+>了解使用 Override 和 New 關鍵字的時機&lt;/a>&lt;br>
+&lt;a class="link" href="https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/new-modifier" target="_blank" rel="noopener"
+>new 修飾詞 (C# 參考)&lt;/a>&lt;/p>
+&lt;/blockquote></description></item></channel></rss>
