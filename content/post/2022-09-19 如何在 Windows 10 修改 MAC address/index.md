@@ -1,7 +1,6 @@
 ---
 title: "如何在 Windows 10 修改 MAC Address"
-date: 2022-09-20
-#slug: test-post-url
+date: 2022-09-19
 categories:
     - Windows
 tags:
