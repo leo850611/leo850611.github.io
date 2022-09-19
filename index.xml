@@ -1,4 +1,65 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Leo Sheu 的日常筆記</title><link>https://blog.sheu.pw/</link><description>Recent content on Leo Sheu 的日常筆記</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Sun, 18 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sheu.pw/index.xml" rel="self" type="application/rss+xml"/><item><title>如何對 protected method 做 unit test</title><link>https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%B0%8D-protected-method-%E5%81%9A-unit-test/</link><pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%B0%8D-protected-method-%E5%81%9A-unit-test/</guid><description>&lt;h3 id="情境">情境&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Leo Sheu 的日常筆記</title><link>https://blog.sheu.pw/</link><description>Recent content on Leo Sheu 的日常筆記</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Mon, 19 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sheu.pw/index.xml" rel="self" type="application/rss+xml"/><item><title>如何在 Windows 10 修改 MAC Address</title><link>https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/</link><pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/</guid><description>&lt;ol>
+&lt;li>Windows 設定 &amp;gt; 網路和網際網路 &amp;gt; 狀態，點選 &amp;ldquo;變更介面卡選項&amp;rdquo;&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-1.png"
+width="773"
+height="470"
+srcset="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-1_hu5a0771fbee9541d8ca4c49192db94cfa_21661_480x0_resize_box_3.png 480w, https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-1_hu5a0771fbee9541d8ca4c49192db94cfa_21661_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="164"
+data-flex-basis="394px"
+>&lt;/p>
+&lt;ol start="2">
+&lt;li>找到要修改的網路，右鍵 &amp;gt; 內容&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-2.png"
+width="857"
+height="381"
+srcset="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-2_hu65ee4f8fe47a50dd10fa3a755eb4b95a_38663_480x0_resize_box_3.png 480w, https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-2_hu65ee4f8fe47a50dd10fa3a755eb4b95a_38663_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="224"
+data-flex-basis="539px"
+>&lt;/p>
+&lt;ol start="3">
+&lt;li>點選設定&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-3.png"
+width="421"
+height="533"
+srcset="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-3_hu7bcb86a038472a16fb4b47cc4da26e3e_28044_480x0_resize_box_3.png 480w, https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-3_hu7bcb86a038472a16fb4b47cc4da26e3e_28044_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="78"
+data-flex-basis="189px"
+>&lt;/p>
+&lt;ol start="4">
+&lt;li>進階 &amp;gt; 本地管理位置 &amp;gt; 值，修改成指定的 MAC address 即可
+&lt;ul>
+&lt;li>例如 &lt;code>F8:8C:21:77:FB:CB&lt;/code> 則填入 &lt;code>F88C2177FBCB&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-4.png"
+width="465"
+height="518"
+srcset="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-4_huc12d27f01a0b8e06155073cc682398aa_28610_480x0_resize_box_3.png 480w, https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-4_huc12d27f01a0b8e06155073cc682398aa_28610_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="89"
+data-flex-basis="215px"
+>&lt;/p>
+&lt;p>最後再利用指令檢查是否修改完成 (實體位址)&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-powershell" data-lang="powershell">&lt;span class="line">&lt;span class="cl">&lt;span class="n">ipconfig&lt;/span> &lt;span class="p">/&lt;/span>&lt;span class="n">all&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>如何對 protected method 做 unit test</title><link>https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%B0%8D-protected-method-%E5%81%9A-unit-test/</link><pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%B0%8D-protected-method-%E5%81%9A-unit-test/</guid><description>&lt;h3 id="情境">情境&lt;/h3>
 &lt;p>在寫單元測試時，如果想要針對一個 protected method 做測試時，在測試專案想要存取 method 時會顯示 &lt;code>cannot access protected method 'XXX' here&lt;/code>&lt;/p>
 &lt;p>&lt;img src="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%B0%8D-protected-method-%E5%81%9A-unit-test/protected-1.png"
 width="493"
