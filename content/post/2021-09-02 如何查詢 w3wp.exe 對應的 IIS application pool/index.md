@@ -6,7 +6,7 @@ categories:
 tags:
     - IIS
     - .NET
-    - windows
+    - Windows
 ---
 
 on Windows 2012 (IIS 8)
