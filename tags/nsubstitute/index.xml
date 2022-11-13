@@ -21,7 +21,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>這時可以使用 &lt;code>Arg.Is&amp;lt;T&amp;gt;(condition)&lt;/code> 裡面帶入指定條件，以此範例為收件人是 Leo 時才回傳造假的結果 &lt;code>true&lt;/code>。&lt;/p>
+&lt;/div>&lt;p>這時可以使用 &lt;code>Arg.Is&amp;lt;T&amp;gt;(condition)&lt;/code> 裡面帶入指定條件，以下範例是當收件人為 Leo 時才回傳造假的結果 &lt;code>true&lt;/code>。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -30,7 +30,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-C#" data-lang="C#">&lt;span class="line">&lt;span class="cl"> &lt;span class="n">_mailService&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Send&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Arg&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Is&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="n">Mail&lt;/span>&lt;span class="p">&amp;gt;(&lt;/span>&lt;span class="n">m&lt;/span> &lt;span class="p">=&amp;gt;&lt;/span> &lt;span class="n">m&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Recipient&lt;/span> &lt;span class="p">==&lt;/span> &lt;span class="s">&amp;#34;Leo&amp;#34;&lt;/span>&lt;span class="p">)).&lt;/span>&lt;span class="n">Returns&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">true&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>另外想測試是否有特定參數的呼叫 &lt;code>Received&lt;/code> 一次，也可以使用 &lt;code>Arg.Is&lt;/code> 去限縮條件。&lt;/p>
+&lt;/div>&lt;p>另外想測試是否有特定參數的呼叫 &lt;code>Received&lt;/code> 一次，也可以使用 &lt;code>Arg.Is&lt;/code> 去限縮條件。
+此例為驗證是否有收件人是 Leo 的 mail 呼叫 &lt;code>Send()&lt;/code> 方法。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
