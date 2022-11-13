@@ -26,15 +26,17 @@ public class Mail
 }
 ```
 
-這時可以使用 ```Arg.Is<T>(condition)``` 裡面帶入指定條件，以此範例為收件人是 Leo 時才回傳造假的結果 ```true```。
+這時可以使用 ```Arg.Is<T>(condition)``` 裡面帶入指定條件，以下範例是當收件人為 Leo 時才回傳造假的結果 ```true```。
 ```C#
     _mailService.Send(Arg.Is<Mail>(m => m.Recipient == "Leo")).Returns(true);
 ```
 
-另外想測試是否有特定參數的呼叫 ```Received``` 一次，也可以使用 ```Arg.Is``` 去限縮條件。
+另外想測試是否有特定參數的呼叫 ```Received``` 一次，也可以使用 ```Arg.Is``` 去限縮條件。 
+此例為驗證是否有收件人是 Leo 的 mail 呼叫 ```Send()``` 方法。
 ```C#
     _mailService.Received(1).Send(Arg.Is<Mail>(m => m.Recipient == "Leo"));
 ```
+
 
 ### Reference
 > [Argument matchers - Conditionally matching an argument](https://nsubstitute.github.io/help/argument-matchers/)
