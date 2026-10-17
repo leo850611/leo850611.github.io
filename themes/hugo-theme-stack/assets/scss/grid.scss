@@ -3,10 +3,14 @@
     margin-right: auto;
 
     .left-sidebar {
+        order: -3;
+        width: 100%;
         max-width: var(--left-sidebar-max-width);
     }
 
     .right-sidebar {
+        order: -1;
+        width: 100%;
         max-width: var(--right-sidebar-max-width);
 
         /// Display right sidebar when min-width: lg
@@ -56,14 +60,10 @@
     display: flex;
     flex-direction: row;
 
-    &.column {
-        flex-direction: column;
-    }
-
     &.on-phone--column {
         flex-direction: column;
         @include respond(md) {
-            flex-direction: unset;
+            flex-direction: row;
         }
     }
 
@@ -73,6 +73,7 @@
 }
 
 main.main {
+    order: -2;
     min-width: 0;
     max-width: 100%;
     flex-grow: 1;
@@ -88,11 +89,11 @@ main.main {
 .main-container {
     min-height: 100vh;
     align-items: flex-start;
-    padding: 0 15px;
+    padding: 0 var(--container-padding);
     gap: var(--section-separation);
     padding-top: var(--main-top-padding);
-    
+
     @include respond(md) {
-        padding: 0 20px;
+        padding-top: 0;
     }
 }
