@@ -1,0 +1,31 @@
+{{/*
+    覆寫 themes/hugo-theme-stack/layouts/_partials/data/description.html
+
+    原因：
+    - 主題原本是 `replaceRE "\n" " " $description | plainify`，先把換行換成空白再 plainify。
+    - Hugo 0.134.0 起，自動摘要 .Summary 從純文字改成 HTML（<p>...</p>）。
+    - plainify 去掉 HTML 標籤時，會在每個 </p> 的位置產生換行，所以先 replaceRE 已經無效。
+    - head/head.html 以 printf "content=%q" 輸出，留下的換行會變成字面上的 \n，
+      出現在 description、og:description、twitter:description。
+
+    修正：先 plainify，再把所有連續空白（含換行）壓成一個空白並去掉頭尾空白。
+
+    主題官方修正後即可刪除此檔。
+*/}}
+<!-- Use site subtitle by default -->
+{{ $description := .Site.Params.sidebar.subtitle }}
+
+<!-- Seprate description exists -->
+{{ if .Site.Params.description }}
+    {{ $description = .Site.Params.description }}
+{{ end }}
+
+{{ if .Description }}
+    <!-- Page description exists -->
+    {{ $description = .Description }}
+{{ else if .IsPage }}
+    <!-- Use page summary -->
+    {{ $description = .Summary }}
+{{ end }}
+
+{{ return ($description | plainify | replaceRE `\s+` " " | strings.TrimSpace) }}
