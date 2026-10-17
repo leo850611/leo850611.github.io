@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Windows on Leo Sheu 的日常筆記</title><link>https://blog.sheu.pw/categories/windows/</link><description>Recent content in Windows on Leo Sheu 的日常筆記</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Mon, 19 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sheu.pw/categories/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>如何在 Windows 10 修改 MAC Address</title><link>https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/</link><pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/</guid><description>&lt;ol>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Windows on Leo Sheu 的日常筆記</title><link>https://blog.leosheu.com/categories/windows/</link><description>Recent content in Windows on Leo Sheu 的日常筆記</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Mon, 19 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.leosheu.com/categories/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>如何在 Windows 10 修改 MAC Address</title><link>https://blog.leosheu.com/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/</link><pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.leosheu.com/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/</guid><description>&lt;ol>
 &lt;li>Windows 設定 &amp;gt; 網路和網際網路 &amp;gt; 狀態，點選 &amp;ldquo;變更介面卡選項&amp;rdquo;&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-1.png"
+&lt;p>&lt;img src="https://blog.leosheu.com/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-1.png"
 width="773"
 height="470"
-srcset="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-1_hu5a0771fbee9541d8ca4c49192db94cfa_21661_480x0_resize_box_3.png 480w, https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-1_hu5a0771fbee9541d8ca4c49192db94cfa_21661_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.leosheu.com/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-1_hu5a0771fbee9541d8ca4c49192db94cfa_21661_480x0_resize_box_3.png 480w, https://blog.leosheu.com/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-1_hu5a0771fbee9541d8ca4c49192db94cfa_21661_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="164"
@@ -13,10 +13,10 @@ data-flex-basis="394px"
 &lt;ol start="2">
 &lt;li>找到要修改的網路，右鍵 &amp;gt; 內容&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-2.png"
+&lt;p>&lt;img src="https://blog.leosheu.com/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-2.png"
 width="857"
 height="381"
-srcset="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-2_hu65ee4f8fe47a50dd10fa3a755eb4b95a_38663_480x0_resize_box_3.png 480w, https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-2_hu65ee4f8fe47a50dd10fa3a755eb4b95a_38663_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.leosheu.com/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-2_hu65ee4f8fe47a50dd10fa3a755eb4b95a_38663_480x0_resize_box_3.png 480w, https://blog.leosheu.com/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-2_hu65ee4f8fe47a50dd10fa3a755eb4b95a_38663_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="224"
@@ -25,10 +25,10 @@ data-flex-basis="539px"
 &lt;ol start="3">
 &lt;li>點選設定&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-3.png"
+&lt;p>&lt;img src="https://blog.leosheu.com/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-3.png"
 width="421"
 height="533"
-srcset="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-3_hu7bcb86a038472a16fb4b47cc4da26e3e_28044_480x0_resize_box_3.png 480w, https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-3_hu7bcb86a038472a16fb4b47cc4da26e3e_28044_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.leosheu.com/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-3_hu7bcb86a038472a16fb4b47cc4da26e3e_28044_480x0_resize_box_3.png 480w, https://blog.leosheu.com/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-3_hu7bcb86a038472a16fb4b47cc4da26e3e_28044_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="78"
@@ -41,10 +41,10 @@ data-flex-basis="189px"
 &lt;/ul>
 &lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-4.png"
+&lt;p>&lt;img src="https://blog.leosheu.com/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-4.png"
 width="465"
 height="518"
-srcset="https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-4_huc12d27f01a0b8e06155073cc682398aa_28610_480x0_resize_box_3.png 480w, https://blog.sheu.pw/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-4_huc12d27f01a0b8e06155073cc682398aa_28610_1024x0_resize_box_3.png 1024w"
+srcset="https://blog.leosheu.com/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-4_huc12d27f01a0b8e06155073cc682398aa_28610_480x0_resize_box_3.png 480w, https://blog.leosheu.com/p/%E5%A6%82%E4%BD%95%E5%9C%A8-windows-10-%E4%BF%AE%E6%94%B9-mac-address/mac-4_huc12d27f01a0b8e06155073cc682398aa_28610_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="89"
