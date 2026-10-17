@@ -2,7 +2,7 @@
 
 Hugo blog
 
-https://blog.sheu.pw
+https://blog.leosheu.com
 
 
 ## Commands
