@@ -1,0 +1,4 @@
+# Override theme translations; other keys still come from themes/hugo-theme-stack/i18n/zh-hant-tw.toml
+[footer]
+    builtWith  = "Built with {{ .Generator }}"
+    designedBy = "Theme {{ .Theme }} designed by {{ .DesignedBy }}"
