@@ -1,0 +1,11 @@
+{{/*
+    覆寫 themes/hugo-theme-stack/layouts/_partials/head/custom.html（主題留給使用者的空白掛勾）
+
+    在首頁加上 WebSite 結構化資料，讓 Google 搜尋結果顯示網站名稱。
+    參考：https://developers.google.com/search/docs/appearance/site-names
+*/}}
+{{- if .IsHome -}}
+<script type="application/ld+json">
+{{ dict "@context" "https://schema.org" "@type" "WebSite" "name" site.Title "url" site.Home.Permalink | jsonify | safeJS }}
+</script>
+{{- end -}}
