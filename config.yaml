@@ -42,7 +42,7 @@ params:
 
     sidebar:
         emoji: #💻
-        subtitle: Notes blog
+        subtitle: Code & Life
         avatar: img/avatar.jpg
 
     article:
