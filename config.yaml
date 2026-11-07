@@ -21,6 +21,13 @@ DefaultContentLanguage: zh-hant-tw
 # This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage: false
 
+# Only the homepage gets an RSS feed; disable it for sections and taxonomy (categories/tags) pages
+outputs:
+    home: [HTML, RSS]
+    section: [HTML]
+    taxonomy: [HTML]
+    term: [HTML]
+
 permalinks:
     post: /p/:slug/
     page: /:slug/
